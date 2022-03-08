@@ -1,0 +1,668 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass&family=Ubuntu&display=swap');
+
+*
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+body
+{
+    background-color: rgba(224, 224, 224, 0.315);
+    /* width: 1440px; */
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* start of the hero section */
+
+.hero_sec
+{
+    height: 80vh;
+    background: linear-gradient(to right , hsl(13, 100%, 72%) 0% , hsl(353, 100%, 62%) 100%);
+    border-bottom-left-radius: 100px;
+    color:hsl(0, 0%, 100%);
+}
+
+.hero_cont
+{
+    background-image: url("../images/bg-pattern-intro-desktop.svg");
+    background-position: -300px;
+    background-repeat: no-repeat;
+    background-size: 2400px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.hero_sec .hero_cont .hero_nav
+{
+    display: flex;
+    width: 90%;
+    margin: 4rem auto 4rem;
+}
+.hero_sec .hero_cont .hero_nav .nav_left_item
+{
+    display: flex; 
+    width: 55%;
+    height: 100%;
+    overflow: hidden;
+}
+.hero_sec .hero_cont .hero_nav .nav_left_item .dropdown
+{
+    overflow: hidden;
+}
+
+.hero_sec .hero_cont .hero_nav .nav_left_item .dropdown .dropdown_content
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: aliceblue;
+    margin-right: 5px;
+    border-radius: 8px;
+    padding: 10px 30px 10px 30px;
+    max-height: max-content;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    position: absolute;
+    z-index: 1;
+    display: none;
+}
+.hero_sec .hero_cont .hero_nav .nav_left_item .dropdown .drop_btn .first_i
+{
+    transform: rotate(180deg);
+}
+
+.hero_sec .hero_cont .hero_nav .nav_left_item .dropdown .dropdown_content1
+{
+    display: flex;
+}
+.hero_sec .hero_cont .hero_nav .nav_left_item .dropdown .dropdown_content2
+{
+    display: flex;
+}
+.hero_sec .hero_cont .hero_nav .nav_left_item .dropdown .dropdown_content3
+{
+    display: flex;
+}
+
+.hero_sec .hero_cont .hero_nav .nav_left_item .dropdown .dropdown_content a
+{
+    color: hsl(237, 23%, 32%);
+    font-family: 'overpass';
+    padding: 7px 0px;
+    text-decoration: none;
+}
+
+.hero_sec .hero_cont .hero_nav .nav_left_item .dropdown .dropdown_content a:hover
+{
+    font-size: 1.15rem;
+    font-weight: 600;
+}
+
+.hero_sec .hero_cont .hero_nav .nav_left_item .dropdown .drop_btn:hover 
+{
+    color:hsl(0, 0%, 100%) ;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+
+.hero_sec .hero_cont h2
+{
+    font-size: 4rem;
+    font-family: 'Ubuntu', sans-serif;
+    margin-right: 10px;
+    margin-left: 20px;
+}
+
+.hero_sec .hero_cont .hero_nav .nav_right_item
+{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    width: 30%;
+}
+
+.hero_sec .hero_cont .hero_nav button , .hero_sec .hero_cont .hero_div .hero_div_btn button
+{
+    color:hsla(0, 0%, 100%, 0.589);
+    margin-left:5px ;
+    margin-right: 5px;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    background-color: transparent;
+    border: 0ch;
+    border-radius: 25px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 600;
+}
+.hero_sec .hero_cont .hero_nav .nav_right_item .signup ,.hero_sec .hero_cont .hero_div .hero_div_btn .start 
+{
+    background-color: white;
+    color: hsl(353, 100%, 62%);
+}
+
+.hero_sec .hero_cont .hero_nav .nav_right_item .login:hover , .hero_sec .hero_cont .hero_nav .nav_right_item .signup:hover , .hero_sec .hero_cont .hero_div .hero_div_btn .start:hover
+{
+    background-color: rgba(255, 255, 255, 0.3);
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+}
+
+.hero_sec .hero_cont .hero_div
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.hero_sec .hero_cont .hero_div h1
+{
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    font-family: 'Overpass', sans-serif;
+    font-weight: 300;
+}
+
+.hero_sec .hero_cont .hero_div p
+{
+    font-size: 1.1rem;
+    color:hsla(0, 0%, 100%, 0.589);
+    font-family: 'Ubuntu';
+    margin-bottom: 3rem;
+}
+
+.hero_sec .hero_cont .hero_div .hero_div_btn .learn
+{
+    border: 1px solid white;
+    font-family: 'ubuntu';
+}
+
+.hero_sec .hero_cont .hero_div .hero_div_btn .learn:hover
+{
+    background-color: white;
+    cursor: pointer;
+    color: hsl(353, 100%, 62%);
+}
+
+/* end of the hero section */
+
+.second_sec 
+{
+    height: 100vh;
+    width: 100;
+    background-image: url("../images/illustration-editor-desktop.svg");
+    background-repeat: no-repeat;
+    background-position:940px 0px;
+    background-size: 755px;
+    margin-top: 4rem;
+    color: hsl(208, 49%, 24%);
+}
+
+.second_sec .sec_sec 
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.second_sec .sec_sec h2
+{
+    align-self: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    font-family: 'ubuntu';
+    font-family: 300 ;
+}
+
+.second_sec .sec_sec .second_sec_div
+{
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+    height: 50%;
+    margin-top:30px ;
+    margin-left: 7rem;
+}
+.second_sec .sec_sec .second_sec_div div:first-child , .fourth_sec .fourth_cont .fourth_cont_div div:first-child
+{
+    margin-bottom:4rem ;
+}
+
+.second_sec .sec_sec .second_sec_div div h4 , .fourth_sec .fourth_cont .fourth_cont_div div h4
+{
+    font-size: 2rem;
+    font-family: 'overpass';
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
+
+.second_sec .sec_sec .second_sec_div div p , .fourth_sec .fourth_cont .fourth_cont_div div p
+{
+    color:hsl(237, 23%, 32%) ;
+    font-family: 'overpass';
+    margin-right:200px ;
+    font-size: 1.2rem;
+    line-height: 30px;
+}
+
+
+/* end of the second section */
+
+/* begin of the third section */
+.third_sec
+{
+    height: 55vh;
+    background: linear-gradient(to right ,hsl(237, 17%, 21%) 0%,hsl(237, 23%, 32%) 100%)  hsl(237, 17%, 21%);
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+    margin-top: 60px;
+}
+.third_cont
+{
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/bg-pattern-circles.svg");
+    background-repeat: no-repeat;
+    background-size: 1000px;
+    background-position: -215px -500px;
+    display: flex;
+}
+
+.third_cont .third_cont_img
+{
+    position: relative;
+    top: -70px;
+    left: 80px;
+    width: 40%;
+}
+
+.third_cont .third_cont_content
+{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    justify-content: center;
+    margin-left: 220px;
+}
+.third_cont .third_cont_content h4
+{
+    color: hsl(0, 0%, 100%) ;
+    font-size: 2rem;
+    font-family: 'overpass';
+    font-family: 600;
+    margin-bottom: 1rem;
+}
+
+.third_cont .third_cont_content p
+{
+    color: hsla(0, 0%, 100%, 0.589) ;
+    line-height: 30px;
+    font-family: 'overpass';
+    margin-right: 80px ;
+}
+
+/* end of the third section */
+
+/* begin of the fourth section */
+.fourth_sec
+{
+    display: flex;
+    background-image: url("../images/illustration-laptop-desktop.svg");
+    background-repeat: no-repeat;
+    background-position:-250px center;
+    background-size: 58%;
+    height: 100vh;
+    margin-top: 10rem;
+}
+
+.fourth_sec .fourth_cont
+{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.fourth_sec .fourth_cont .fourth_cont_div
+{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    height: 50%;
+}
+
+.fourth_sec .fourth_cont .fourth_cont_div div h4
+{
+    color: hsl(208, 49%, 24%);    
+}
+
+/* end of the fourth section */
+
+/* begin of the last section */
+
+.final_sec
+{
+    background-color: hsl(240, 10%, 16%);
+    border-top-right-radius: 100px;
+    height: 50vh;
+    margin-top: 10rem;
+}
+
+.final_sec footer
+{
+    display: flex;
+    width: 80%;
+    justify-content: space-around;
+    height: 100%;
+}
+
+.final_sec footer div:first-child
+{
+    margin-left: 100px;
+    height: 100%;
+    width: 40%;
+}
+.final_sec footer div:first-child h2
+{
+    margin-top: 50px;
+    font-size: 3rem;
+    font-weight: 600;
+    font-family: 'overpass';
+    color:hsl(0, 0%, 100%) ;
+}
+.final_sec footer div:last-child
+{
+    width: 60%;
+    display: flex;
+    justify-content: flex-start;
+}
+.final_sec footer div ul
+{
+    display: flex;
+    margin-top: 70px;
+    list-style-type: none;
+    margin-right: 200px;
+    width: 100%;
+}
+.final_sec footer div ul
+{
+    color:hsl(0, 0%, 100%);
+    font-family: 'overpass';
+    height: 48%;
+}
+
+.final_sec footer div ul .li1 .ul1 , .final_sec footer div ul .li2 .ul2 , .final_sec footer div ul .li3 .ul3
+{
+    margin-top:50px ;
+    display: flex;
+    flex-direction:column ;
+    height: 100%;
+}
+
+.final_sec footer div ul .li1 .ul1 li , .final_sec footer div ul .li2 .ul2 li , .final_sec footer div ul .li3 .ul3 li
+{
+    color:hsla(0, 0%, 100%, 0.589) ;
+    margin-bottom: 8px;
+}
+
+@media (max-width:1440px)
+{
+    .second_sec 
+    {
+        background-position: 860px 0px;
+    }
+}
+
+@media (max-width:1350px)
+{
+    .second_sec 
+    {
+        background-position: 800px 0px;
+    }
+}
+
+@media (max-width:1300px)
+{
+    .second_sec
+    {
+        background-position: 750px 0px;
+    }
+    .second_sec .sec_sec h2
+    {
+        font-size: 140%;
+        margin-bottom: 2rem;
+    }
+
+    .second_sec .sec_sec .second_sec_div div h4
+    {
+        font-size: 150%;
+    }
+
+    .second_sec .sec_sec .second_sec_div div p
+    {
+        font-size: 105%;
+        line-height: 23px;
+    }
+     
+}
+
+@media (max-width:1150px)
+{
+    .second_sec 
+    {
+        background-position: 600px 0px;
+    }
+    .hero_sec .hero_cont .hero_nav
+    {
+        margin: 4rem 0px 4rem;
+    }
+    .hero_sec .hero_cont .hero_nav h2
+    {
+        font-size: 250%;
+        margin-left: 3rem;
+    }
+    .hero_sec .hero_cont .hero_nav div button
+    {
+        font-size: 90%;
+    }
+
+    .hero_sec .hero_cont .hero_div h1
+    {
+        font-size: 280%;
+    }
+
+    .hero_sec .hero_cont .hero_div p
+    {
+        font-size: 90%;
+    }
+
+    .hero_sec .hero_cont .hero_nav button , .hero_sec .hero_cont .hero_div .hero_div_btn button
+    {
+        padding: 0.5rem 1rem;
+    }
+}
+
+@media (max-width:970px)
+{
+    .second_sec .sec_sec h2
+    {
+        font-size: 100%;
+        margin-bottom: 0.5rem;
+    }
+
+    .second_sec .sec_sec .second_sec_div div h4
+    {
+        font-size: 120%;
+    }
+
+    .second_sec .sec_sec .second_sec_div div p
+    {
+        font-size: 90%;
+        line-height: 20px;
+    }
+    .second_sec .sec_sec .second_sec_div
+    {
+        margin-top: 4rem;
+    }
+    .second_sec .sec_sec .second_sec_div div:first-child , .fourth_sec .fourth_cont .fourth_cont_div div:first-child
+    {
+        margin-bottom: 2rem;
+    }
+
+    .third_cont .third_cont_content h4
+    {
+        font-size: 90%;
+        margin-bottom: 0.5rem;
+    }
+
+    .third_cont .third_cont_content p
+    {
+        font-size: 80%;
+        line-height: 20px;
+    }
+
+    .second_sec 
+    {
+        background-position: 450px 0px;
+    }
+
+    .fourth_sec
+    {
+        background-position:-160px center;
+    }
+   
+    .fourth_sec .fourth_cont .fourth_cont_div div h4
+    {
+        font-size: 130%;
+    }
+
+    .fourth_sec .fourth_cont .fourth_cont_div div p
+    {
+        font-size: 80%;
+        line-height: 20px;
+    }
+
+    .fourth_sec
+    {
+        margin-top: 5rem;
+    }
+
+    .final_sec
+    {
+        margin-top: 2rem;
+    }
+
+    .final_sec footer
+    {
+        width: 60%;
+    }
+
+    .final_sec footer div:first-child
+    {
+        margin-left: 80px;
+    }
+
+    .final_sec footer div:first-child h2
+    {
+        font-size: 180%;
+        margin-left: 20px;
+    }   
+
+    .final_sec footer div:last-child
+    {
+        width: 55%;
+    }
+
+    .final_sec footer div ul
+    {
+        margin-top: 60px;
+        margin-right: 100px;
+        width: 70%;
+    }
+
+    .final_sec footer div ul .li1 .ul1 , .final_sec footer div ul .li2 .ul2 , .final_sec footer div ul .li3 .ul3
+    {
+        margin-top:20px;
+    }
+    .final_sec footer div ul .li1 .ul1 li , .final_sec footer div ul .li2 .ul2 li , .final_sec footer div ul .li3 .ul3 li
+    {
+        margin-bottom: 4px;
+    }
+    
+    .third_cont .third_cont_img
+    {
+        left: -30px;
+        width: 33%;
+    }
+}
+
+@media (max-width:850px)
+{
+    .second_sec 
+    {
+        background-position: 380px 0px;
+        background-size: 600px;
+    }
+    .hero_sec .hero_cont .hero_nav .nav_left_item
+    {
+        width: 40%;
+    }
+    .third_cont .third_cont_img
+    {
+        width: 20%;
+        top: 0px;
+        left: 20px;
+    }
+    .third_cont .third_cont_img img
+    {
+        width: 300px;
+    }
+
+
+    .second_sec .sec_sec h2
+    {
+        font-size: 80%;
+    }
+
+    .second_sec .sec_sec .second_sec_div div h4
+    {
+        font-size: 80%;
+    }
+
+    .second_sec .sec_sec .second_sec_div div p
+    {
+        font-size: 70%;
+        line-height: 15px;
+    }
+    .second_sec .sec_sec .second_sec_div
+    {
+        margin-top: 2rem;
+    }
+    .second_sec .sec_sec .second_sec_div div:first-child , .fourth_sec .fourth_cont .fourth_cont_div div:first-child
+    {
+        margin-bottom: 1rem;
+    }
+
+    .second_sec 
+    {
+        background-position: 300px 0px;
+    }
+
+    .hero_sec .hero_cont .hero_div h1
+    {
+        font-size: 180%;
+        margin-bottom: 0.5rem;
+    }
+
+    .hero_sec .hero_cont .hero_div p
+    {
+        font-size: 80%;
+        margin-bottom: 2rem;
+    }
+}
